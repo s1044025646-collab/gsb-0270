@@ -1,0 +1,25 @@
+{
+  "name": "rgb-palette-quantizer",
+  "version": "1.0.0",
+  "description": "本地确定性加权 median-cut RGB 调色板量化 API 与 CLI",
+  "main": "dist/src/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/src/server.js",
+    "cli": "node dist/src/cli.js",
+    "demo": "node dist/src/cli.js demo",
+    "test": "node --test --import tsx tests/*.test.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^24.19.1",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=25.0.0"
+  }
+}
