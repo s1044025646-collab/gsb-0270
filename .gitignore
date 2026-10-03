@@ -1,0 +1,9 @@
+node_modules/
+dist/
+data/*.db
+data/*.db-wal
+data/*.db-shm
+data/server.port
+data/srv.out
+data/srv.err
+*.ppm

@@ -1,0 +1,23 @@
+{
+  "name": "rgb-palette-quantizer",
+  "version": "1.0.0",
+  "description": "本地 RGB 调色板量化与像素误差解释后端（加权 median-cut），仅 API 与 CLI",
+  "type": "module",
+  "bin": {
+    "rq": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"dist/test/*.test.js\"",
+    "start": "node dist/server.js",
+    "demo": "npm run build && node dist/cli.js demo"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^7.0.2"
+  }
+}
